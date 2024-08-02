@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            background-color: pink;
+        }
+        li{
+            /* display: inline-block; */
+            list-style: circle;
+            list-style-position: inside;
+            /* bulletpoints (circles) 'ul' ke inside honge ya outside  */
+            /* list-style: url('redtick.png'); */ 
+            /* use smaller size of images  */
+        }
+        header{
+            background-color: black;
+            color: aliceblue;
+            height: 70px;
+            z-index: 10;
+            /* jiski z-index jyada hogi woh sabse upar rahega , it specifies stack order of the elements (in 3D) */
+        }
+        p{
+            text-align: center;
+            border: 2px solid black;
+        }
+        .container{
+            background-color: rgb(22, 177, 255);
+            color: rgb(0, 44, 68);
+            height: 80vh;
+            width: 120vh;
+            margin: auto;
+            /* apne aap centre mei aa jayega */
+        }
+        .box-static{
+            background-color: antiquewhite;
+            height: 80px;
+            width: 200px;
+            position:static;
+            top: 5px;
+            right: 5px;
+            /* top,left,bottom,right wont have any effect  */
+            /* it is the default position  */
+        }
+        .box-relative{
+            background-color: rgb(197, 155, 101);
+            height: 80px;
+            width: 200px;
+            position:relative;
+            top: 30px;
+            right: 30px;
+            /* top,left,bottom,right will have effect  */
+            /* position will be relative to the last static element above it  */
+        }
+        .box-absolute{
+            background-color: rgb(248, 141, 250);
+            height: 300px;
+            width: 200px;
+            position:absolute;
+            right: 5px;
+            bottom: 0px;
+            /* position will be relative to the parent (html tag) element  */
+        }
+        .box-fixed{
+            background-color: rgb(243, 255, 111);
+            height: 80px;
+            width: 200px;
+            position:fixed;
+            top: 100px;
+            left: 100px;
+            /* position will be relative to the browser element  */
+        }
+        .box-sticky{
+            background-color: rgb(186, 132, 61);
+            height: 80px;
+            width: 200px;
+            position:sticky;
+            /* position based on user's scroll position  */
+        }
+
+    </style>
+    <!-- position - statis, relative, absolute, fixed, sticky  -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore atque porro ad nulla, doloremque possimus neque sunt aut ab corporis in dicta facilis iste quod fuga magnam error sequi accusantium amet velit. Consequuntur doloribus molestiae, architecto eaque consequatur ut veritatis.
+        </p>
+        <div class="box-static">
+            i am a box, my position is static
+        </div><br>
+        <div class="box-relative">
+            i am a box, my position is relative
+        </div><br>
+        <div class="box-absolute">
+            i am a box, my position is absolute
+        </div>
+        <div class="box-fixed">
+            i am a box, my position is fixed
+        </div>
+        <div class="box-sticky">
+            i am a box, my position is sticky
+        </div><br>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Carrot</li>
+    </ul>
+
+</body>
+</html>

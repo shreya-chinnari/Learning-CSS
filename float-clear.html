@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float-clear</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1 {
+            height: 234px;
+            width: 345px;
+            background-color: pink;
+            float:right;
+        }
+        .box2 {
+            height: 234px;
+            width: 345px;
+            background-color:blanchedalmond ;
+            float:right;
+        }
+        .box3 {
+            height: 234px;
+            width: 345px;
+            background-color:rgb(159, 236, 255) ;
+            float:right;
+        }
+        /* float moves the element towards right/left  */
+        .box4 {
+            height: 234px;
+            width: 345px;
+            background-color:rgb(180, 255, 167) ;
+            
+
+        }
+        .box5 {
+            height: 234px;
+            width: 345px;
+            background-color:rgb(71, 207, 94) ;
+            /* clear - what elements can flow inside the element  */
+            clear:right;
+            /* isse all floating elements on the right will be removed  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+</body>
+
+</html>

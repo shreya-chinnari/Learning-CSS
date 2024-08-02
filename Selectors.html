@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+/* "h1" and "div" are element selectors here  */
+        h1{
+            color: red;
+        }
+        div{
+            background-color: blanchedalmond;
+        }
+/* "#blue-text" is id selector  */
+        #blue-text{
+            color: blue;
+        }
+/* "green-text" is class selector  */
+        .green-text{
+            color: green;
+        }
+        h2,h3,h4{
+            color: purple;
+        }
+/* all PARAGRAPHS of class "bg-yellow" will be yellow */
+/* "element.className" can be used for any element */
+        P.bg-yellow{
+            background-color: yellow;
+        }
+/* all PARAGRAPHS of id "bg-white" will be white */
+/* "element#idName" can be used for any element */
+        P.bg-yellow{
+            background-color: white;
+        }
+/* "*" can be used as universal selector  */
+        *{
+            font-style: italic;
+        }  
+/* "inline style" is priortised when it clashes with "external style"  */
+/* "inline style" > "style{}" > stylesheet (style.css) - PRIORITY */
+    </style>
+</head>
+<body>
+    <div>
+        <h1> CSS Selector page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corrupti delectus reprehenderit excepturi sequi sint culpa illum exercitationem similique nobis? Illo necessitatibus at atque hic vero omnis quis nam facere dolorum. Esse similique blanditiis voluptatibus. Nam atque numquam amet nihil voluptate accusamus ipsum nesciunt culpa.</p>
+        <h1> New h1</h1>
+        <div id="blue-text">Blue text, for id selectors use #idName</div>
+        <section class="green-text">Green text, for clas selectors use .className</section>
+        <span class="green-text">First tag</span> <br>
+        <span class="green-text">Second tag</span><br>
+        <span class="green-text">Third tag</span><br>
+        <span class="green-text">Fourth tag</span><br>
+    </div>
+    <div>        
+        <h2> this is h2</h2>
+        <h2> this is h3</h2>
+        <h2> this is h4</h2>
+    </div>
+<!-- use "div.className" to create a class  -->
+    <div class="className"></div>
+<!-- use "span.className" to create a class  -->
+    <span class="className"></span>
+<!-- use "section.className" to create a class  -->
+    <section class="className"></section>
+</body>
+</html>

@@ -1,0 +1,25 @@
+#first{
+    background-color: purple;          
+}
+.first{
+    background-color: pink;
+    color: black;
+}
+
+.red .green{
+    margin: 0;
+    padding: 0;
+}
+.red{
+    background-color: red;
+    color: white;
+    height:90px;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+
+/* HSL - hue, saturation, lightness  */
+
+/* RGBA and HSLA are rarely used by beginners. a=alpha  */

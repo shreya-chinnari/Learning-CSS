@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            background: rgb(215, 156, 255);
+            margin: 30px;
+            height: 900px;
+            width: 400px;
+            /* box-sizing: content-box; */
+            border: 15px solid black;
+        }
+        .box2{
+            background: rgb(148, 255, 171);
+            /* margin: 30px; */
+            padding: 30px;
+            height: 20px;
+            width: 100%;
+            border: 5px solid black;
+            box-sizing: border-box;
+            /* content box is by default  */
+            /* border box mei border + padding sab include karke rehta hai  */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quam aliquam quasi asperiores sapiente atque incidunt cupiditate dignissimos, reprehenderit, illum, alias quibusdam vitae quod a. Accusamus amet, voluptatibus velit accusantium sed rerum magnam aliquam ipsum in veniam labore a sit.
+
+        <div class="box2">
+            child box
+        </div>
+
+    </div>
+
+</body>
+</html>

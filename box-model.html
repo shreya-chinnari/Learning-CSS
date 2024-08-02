@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            width: 300px;
+            height:500px;
+            background: red;
+            margin: 40px;
+            padding: 40px;
+            border: 4px solid black;
+            /* total height = height of content + top/bottom border + top/bottom margin */
+        }
+        .yay{
+            height: 300px;
+            width: 500px;
+            background: aqua;
+            margin: 30px 20px 10px 80px;
+            /* top right bottom left  */
+            padding: 10px 20px;
+            /* top-bottom  right-left  */
+            border:6px dashed black;
+            border-radius: 30px;
+            /* border-width border-style border-color:  */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- MBPC - Margin Border Padding Content  -->
+    <div class="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, labore. Reprehenderit obcaecati perferendis, iusto recusandae sapiente vero in earum assumenda perspiciatis laboriosam doloremque magni magnam, amet accusantium non repudiandae, facere commodi ad molestias quidem? Quibusdam accusamus dolores vel quisquam molestias?
+    </div>
+    <div class="yay">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quis quae tempora minima accusamus incidunt eum adipisci facilis doloribus sapiente eligendi earum nisi reiciendis voluptatum, dolores magni, explicabo est suscipit ipsum minus? Labore aut doloribus iste beatae aliquid optio in?
+    </div>
+
+</body>
+</html>

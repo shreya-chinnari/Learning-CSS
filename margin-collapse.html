@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            background: rgb(215, 156, 255);
+            margin: 30px;
+            height: 40px;
+        }
+        .box2{
+            background: rgb(148, 255, 171);
+            margin: 30px;
+            height: 40px;
+        }
+        /* dono ke beech 40px ki margin hogi, not 80px  */
+        .box3{
+            background: rgb(255, 148, 212);
+            margin: 90px;
+            height: 40px;
+            padding: 4px;
+
+        }
+        /* jiska maximum margin hoga wohi apply hoga, kam wale ka collapse ho jayega because woh overlap ho jayega */
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quam aliquam quasi asperiores sapiente atque incidunt cupiditate dignissimos, reprehenderit, illum, alias quibusdam vitae quod a. Accusamus amet, voluptatibus velit accusantium sed rerum magnam aliquam ipsum in veniam labore a sit.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quam aliquam quasi asperiores sapiente atque incidunt cupiditate dignissimos, reprehenderit, illum, alias quibusdam vitae quod a. Accusamus amet, voluptatibus velit accusantium sed rerum magnam aliquam ipsum in veniam labore a sit.
+    </div>
+    <div class="box3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non quam aliquam quasi asperiores sapiente atque incidunt cupiditate dignissimos, reprehenderit, illum, alias quibusdam vitae quod a. Accusamus amet, voluptatibus velit accusantium sed rerum magnam aliquam ipsum in veniam labore a sit.
+    </div>
+</body>
+</html>

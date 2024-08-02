@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            /* flex-direction - direction in which items are laid  */
+            flex-wrap: wrap;
+            height: 60vh;
+            background-color: beige;
+            justify-content: center;
+            /* align-items: center; */
+            /* align-items mei while wrapping gap aa jata hai elements ke beech mei */
+            align-content: center;
+            /* align-content use karne se woh gap hat jata hai and the elements inside the container are treated as 1 element  */
+        }
+        .box1{
+            background-color: salmon;
+            height: 200px;
+            width: 300px;
+            border: solid black 1px;
+            padding: 10px;
+            order:3; 
+            /* yahan order 3 mei end mei isliye ja raha hai bcz box2,3,4 are all from same class, otherwise it would be used for changing order of boxes  */
+            /* order has integer values and global values  */
+            flex-grow: 3;
+
+        }
+        .box2{
+            background-color: rgb(139, 179, 255);
+            height: 200px;
+            width: 300px;
+            border: solid black 1px;
+            padding: 10px;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <!-- main axis is horizontal, cross axis is vertical (not always)  -->
+     <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box2">box3</div>
+        <div class="box2">box4</div>
+     </div>
+</body>
+</html>
